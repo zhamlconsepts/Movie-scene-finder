@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0d0d12 0%, #17171e 100%);
+            color: #b0b0b0;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            align-items: center;
+            padding: 0 50px;
+            overflow: hidden;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-img {
+            width: 80%;
+            max-width: 400px;
+            border-radius: 30px;
+            border: 3px solid rgba(127, 255, 212, 0.6);
+            box-shadow: 0 0 25px rgba(127, 255, 212, 0.4), 0 0 50px rgba(127, 255, 212, 0.2);
+            transition: all 0.5s ease;
+        }
+        .profile-img:hover {
+            transform: scale(1.02);
+            border: 3px solid rgba(127, 255, 212, 1);
+            box-shadow: 0 0 35px rgba(127, 255, 212, 0.7), 0 0 70px rgba(127, 255, 212, 0.5);
+        }
+        .right-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 40px;
+        }
+        .main-title {
+            color: #ffffff;
+            font-size: 4rem;
+            margin: 0 0 30px 0;
+            font-weight: 900;
+            letter-spacing: -2px;
+            text-shadow: 0 0 10px rgba(255,255,255,0.2);
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .btn {
+            background-color: #1a1a1e;
+            border: 2px solid rgba(127, 255, 212, 0.5);
+            border-radius: 18px;
+            padding: 25px 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            font-weight: bold;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 15px rgba(127, 255, 212, 0.2);
+        }
+        .btn:hover {
+            background-color: #222226;
+            transform: scale(1.03);
+            border-color: rgba(127, 255, 212, 0.1);
+            box-shadow: none;
+            color: #888;
+        }
+        .label {
+            font-size: 0.7rem;
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .highlight-text {
+            color: aquamarine;
+        }
+        @media screen and (max-width: 1024px) {
+            body {
+                grid-template-columns: 1fr;
+                padding: 30px;
+                height: auto;
+                overflow: auto;
+            }
+            .image-container { margin-bottom: 30px; margin-top: 20px; }
+            .profile-img { width: 70%; max-width: 300px; }
+            .right-section { padding-left: 0; align-items: center; text-align: center; }
+            .main-title { font-size: 3rem; }
+            .menu-grid { width: 100%; max-width: 700px; grid-template-columns: repeat(2, 1fr); }
+        }
+        @media screen and (max-width: 768px) {
+            .menu-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="img/photo_2026-03-29_00-54-09.jpg" class="profile-img" alt="Jamshid">
+    </div>
+    <div class="right-section">
+        <h1 class="main-title">All About Me</h1>
+        <div class="menu-grid">
+            <div class="btn"><span class="label">First Name</span><span class="highlight-text">Ablakimov</span></div>
+            <div class="btn"><span class="label">Last Name</span><span class="highlight-text">Jamshid</span></div>
+            <div class="btn"><span class="label">Age</span><span class="highlight-text">17</span></div>
+            <div class="btn"><span class="label">Artist</span><span class="highlight-text">d4vd</span></div>
+            <div class="btn"><span class="label">Actor</span><span class="highlight-text">Jim Carrey</span></div>
+            <div class="btn"><span class="label">Director</span><span class="highlight-text">C. Nolan</span></div>
+            <div class="btn"><span class="label">Profession</span><span class="highlight-text">UI/UX Designer</span></div>
+            <div class="btn"><span class="label">Hobby</span><span class="highlight-text">Video Editing</span></div>
+            <div class="btn"><span class="label">Birthday</span><span class="highlight-text">20.07.2008</span></div>
+            <div class="btn"><span class="label">Color</span><span class="highlight-text">Aqua</span></div>
+            <div class="btn"><span class="label">Food</span><span class="highlight-text">Somsa</span></div>
+            <div class="btn"><span class="label">Sport</span><span class="highlight-text">Football</span></div>
+        </div>
+    </div>
+</body>
+</html>
